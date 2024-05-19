@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Unfollow Artists</h1>
+<form method="post" enctype="multipart/form-data" class="mt-4">
+    {% if file_not_found %}
+    <div class="alert alert-danger" role="alert">
+        The file 'unfollow_artists.csv' does not exist. Please upload a file.
+    </div>
+    {% endif %}
+    <div class="form-group">
+        <label for="file">Upload CSV File:</label>
+        <input type="file" id="file" name="file" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to unfollow the artists listed in the file?')">Unfollow Artists</button>
+</form>
+<div class="text-center mt-3">
+    <a href="{{ url_for('menu') }}" class="btn btn-secondary">Back to Menu</a>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Label Releases{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Recent Releases for {{ label_name }}</h1>
+    <ul class="list-group">
+        {% for release in releases %}
+            <li class="list-group-item bg-dark text-white">
+                <strong>{{ release.release_date.strftime('%B %d, %Y') }}</strong> - 
+                <a href="{{ release.release_url }}" class="text-white">{{ release.release_name }}</a> by {{ release.artist_name }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('menu') }}" class="btn btn-primary mt-3">Back to Menu</a>
+</div>
+{% endblock %}

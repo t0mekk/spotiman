@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Fetch Label Releases{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Fetch Label Releases</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="label_name">Record Label Name</label>
+            <input type="text" class="form-control" id="label_name" name="label_name" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Fetch Releases</button>
+    </form>
+</div>
+{% endblock %}

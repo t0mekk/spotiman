@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Unfollowed Artists{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Unfollowed Artists</h1>
+    <p>Total Artists Unfollowed: {{ count }}</p>
+    <ul class="list-group">
+        {% for artist in unfollowed_artists %}
+            <li class="list-group-item bg-dark text-white">{{ artist }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('menu') }}" class="btn btn-primary mt-3">Back to Menu</a>
+</div>
+{% endblock %}

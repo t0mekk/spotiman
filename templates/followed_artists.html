@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Followed Artists</h1>
+<p class="text-center">Successfully saved {{ count }} followed artists to followed_artists.csv</p>
+<div class="text-center">
+    <a href="{{ url_for('menu') }}" class="btn btn-primary">Back to Menu</a>
+</div>
+{% endblock %}

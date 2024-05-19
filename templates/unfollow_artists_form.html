@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Unfollow Artists{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Unfollow Artists</h1>
+    {% if file_not_found %}
+        <p class="text-danger">No file found to unfollow artists. Please upload a file.</p>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file">Upload CSV File</label>
+            <input type="file" class="form-control-file" id="file" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Unfollow Artists</button>
+    </form>
+</div>
+{% endblock %}

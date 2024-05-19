@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Menu{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>Main Menu</h1>
+    <a href="{{ url_for('fetch_followed_artists') }}" class="btn btn-primary mb-2">Fetch Followed Artists</a>
+    <a href="{{ url_for('display_followed_artists') }}" class="btn btn-primary mb-2">Display Followed Artists</a>
+    <a href="{{ url_for('unfollow_artists') }}" class="btn btn-primary mb-2">Unfollow Artists</a>
+    <a href="{{ url_for('fetch_label_releases') }}" class="btn btn-primary mb-2">Fetch Label Releases</a>
+</div>
+{% endblock %}

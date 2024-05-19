@@ -1,0 +1,62 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: none;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+.card .btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,1);
+}
+
+.pagination .page-link {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #1e1e1e;
+    border: none;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #1db954;
+    border-color: #1db954;
+}
+
+.btn-secondary {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #1ed760;
+    border-color: #1ed760;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: #555555;
+    border-color: #555555;
+}
